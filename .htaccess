@@ -1,0 +1,8 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(home|index|signup|login|verification|dashboard|logout|entity|category|changepassword|addentity|watch|entitylists|addvideo)$ $1.php [NC,L]
+RewriteRule ^verification/([a-zA-Z0-9]+)/?$ verification.php?verify=$1 
+RewriteRule ^watch/([a-zA-Z0-9]+)/?$ watch.php?videoId=$1 
+RewriteRule ^entity/([a-zA-Z0-9]+)/?$ entity.php?entity=$1 
