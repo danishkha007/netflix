@@ -75,5 +75,28 @@ require "backend/shared/header.php";
             </form>
         </div>
     </section>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.12.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.12.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAzB61ipd2xuBzNURDJk_U851u7EPNQ_Ds",
+    authDomain: "video-on-demand-project.firebaseapp.com",
+    projectId: "video-on-demand-project",
+    storageBucket: "video-on-demand-project.firebasestorage.app",
+    messagingSenderId: "240805841798",
+    appId: "1:240805841798:web:55d7111dba1e7e37c57a07",
+    measurementId: "G-078ZN4XQXF"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 </body>
 </html>
